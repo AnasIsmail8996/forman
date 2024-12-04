@@ -1,0 +1,364 @@
+
+@font-face {
+    font-family: 'Regular'; /* Common font family name */
+    font-weight: normal; /* For regular weight */
+    font-style: normal; 
+    src: url('./Alpha/Alpha-Regular.otf') format('opentype'); 
+}
+
+@font-face {
+    font-family: 'Medium'; 
+    font-weight: 500; 
+    font-style: normal; 
+    src: url('./Alpha/Alpha-Medium.otf') format('opentype'); 
+}
+
+@font-face {
+    font-family: 'Light'; /* Common font family name */
+    font-weight: 300; /* For light weight */
+    font-style: normal; 
+    src: url('./Alpha/Alpha-Light.otf') format('opentype'); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none !important;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+body{}
+
+ header{
+
+    width: 100%;
+    height: 77px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+} 
+.logo{
+font-family: "Medium";  
+font-weight: 400;
+color: #ffff;
+font-size: 40px;
+font-weight: 400;
+line-height: 38.48px;
+text-align: left;
+
+}
+.hamburger{
+    display: none;
+}
+.nav__bar ul{
+    display: flex;
+}
+.nav__bar ul li a{
+
+    display: block;
+    font-size: 25px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    font-family: 'Medium';
+    margin: 0 5px;
+    color: #fefefe !important;
+}
+
+.nav__bar ul li a:hover{
+    color: #ffff;
+    background: linear-gradient(90deg, #59CBE9 0%, #F2ACB8 100%);
+}
+
+.nav__bar ul li a.active{
+    /* color: #000;
+    background: linear-gradient(90deg, #59CBE9 0%, #F2ACB8 100%);
+    color: #ffff; */
+}
+.nav__bar ul li a.buy-now{
+    font-family: "Medium";
+    background: linear-gradient(90deg, #59CBE9 0%, #F2ACB8 100%);
+    width: Fixed (168px)px;
+    height: Hug (63px)px;
+   border-radius: 0;
+   text-align: center;
+    padding: 17px 31px 17px 51px;
+    gap: 10px;
+    opacity: 0px;
+    cursor: pointer;
+    border: none;
+    color: #ffff;
+}
+
+
+@media (max-width:1250px)  and (min-width:1200px)  {
+    header{
+        width: 100%;
+        height: 77px; 
+       
+        /* padding: 0 100px; */
+    } 
+    .logo{
+    font-family: "Light";  
+    font-weight: 400;
+    color: #ffff;
+   text-align: center;
+    }
+    .hamburger{
+        display: none;
+    }
+    .nav__bar ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav__bar ul li a{
+       margin-top: 18px;
+        font-size: 25px;
+         text-align: center;
+          font-weight: 900;
+        transition: 0.2s;
+        font-family: 'Light';
+    
+        color: #fefefe;
+    }
+    
+    .nav__bar ul li a:hover{
+        color: #ffff;
+        background: linear-gradient(90deg, #59CBE9 0%, #F2ACB8 100%);
+    }
+    
+    .nav__bar ul li a.active{
+        /* color: #000;
+        background: linear-gradient(90deg, #59CBE9 0%, #F2ACB8 100%);
+        color: #ffff; */
+    }
+    .nav__bar ul li a.buy-now{
+        font-family: "Medium";
+        background: linear-gradient(90deg, #59CBE9 0%, #F2ACB8 100%);
+        width: Fixed (168px)px;
+        height: Hug (63px)px;
+       border-radius: 0;
+       text-align: center;
+        padding: 17px 31px 17px 51px;
+        gap: 10px;
+        opacity: 0px;
+        cursor: pointer;
+        border: none;
+        color: #ffff;
+    }
+}
+
+@media (max-width:1200px) and (min-width: 1080px) {
+    header{
+        width: 100%;
+        height: 77px; 
+       
+        /* padding: 0 100px; */
+    } 
+    .logo{
+    font-family: "Light";  
+    font-weight: 400;
+    color: #ffff;
+   text-align: center;
+   font-size: 43px;
+    }
+    .hamburger{
+        display: none;
+    }
+    .nav__bar ul{
+   
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav__bar ul li a{
+       margin-top: 18px;
+        font-size: 20px;
+         text-align: center;
+          font-weight: 900;
+        transition: 0.2s;
+        font-family: 'Light';
+    
+        color: #fefefe;
+    }
+    
+    .nav__bar ul li a:hover{
+        color: #ffff;
+        background: linear-gradient(90deg, #59CBE9 0%, #F2ACB8 100%);
+    }
+    
+    .nav__bar ul li a.active{
+        /* color: #000;
+        background: linear-gradient(90deg, #59CBE9 0%, #F2ACB8 100%);
+        color: #ffff; */
+    }
+    .nav__bar ul li a.buy-now{
+        font-family: "Medium";
+        background: linear-gradient(90deg, #59CBE9 0%, #F2ACB8 100%);
+        width: Fixed (168px)px;
+        height: Hug (63px)px;
+       border-radius: 0;
+       text-align: center;
+        padding: 17px 31px 17px 51px;
+        gap: 10px;
+        opacity: 0px;
+        cursor: pointer;
+        border: none;
+        color: #ffff;
+    }
+}
+@media (max-width:1080px) and (min-width: 991px){
+    header{
+        width: 100%;
+        height: 77px; 
+       
+        /* padding: 0 100px; */
+    } 
+    .logo{
+    font-family: "Light";  
+    font-weight: 400;
+    color: #ffff;
+   text-align: center;
+   font-size: 30px;
+    }
+    .hamburger{
+        display: none;
+    }
+    .nav__bar ul{
+   
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav__bar ul li a{
+       margin-top: 18px;
+        font-size: 18px;
+         text-align: center;
+          font-weight: 900;
+        transition: 0.2s;
+        font-family: 'Light';
+    
+        color: #fefefe;
+    }
+    
+    .nav__bar ul li a:hover{
+        color: #ffff;
+        background: linear-gradient(90deg, #59CBE9 0%, #F2ACB8 100%);
+    }
+    
+    .nav__bar ul li a.active{
+        /* color: #000;
+        background: linear-gradient(90deg, #59CBE9 0%, #F2ACB8 100%);
+        color: #ffff; */
+    }
+    .nav__bar ul li a.buy-now{
+        font-family: "Medium";
+        background: linear-gradient(90deg, #59CBE9 0%, #F2ACB8 100%);
+        width: Fixed (168px)px;
+        height: Hug (63px)px;
+       border-radius: 0;
+       text-align: center;
+        padding: 17px 31px 17px 51px;
+        gap: 10px;
+        opacity: 0px;
+        cursor: pointer;
+        border: none;
+        color: #ffff;
+    }
+}
+@media only  screen and (max-width:991px) {
+ .hamburger{
+    display: block;
+    cursor: pointer;
+ }
+ .hamburger .line{
+    width: 30px;
+    height: 3px;
+ background: #fefefe;
+ margin: 6px 0;
+ }
+ 
+ .nav__bar ul {
+    margin-left: -35% ;
+    flex-direction: column; /* Keep links in a column layout */
+    align-items: center; /* Center align items */
+}
+
+.nav__bar ul li {
+    margin-left: 75%;
+    width: 100%; 
+    text-align: center; 
+    line-height: 14px;
+}
+
+.nav__bar ul li a {
+    width: auto; /* Remove fixed width, if any */
+    margin: 0 auto; /* Center the link */
+}
+
+ .nav__bar{
+    height: 450px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 59vh;
+  
+    /* transition: 0.5s; */
+    overflow: hidden;
+ }
+ .nav__bar.active{
+    height: 450px;
+ }
+ .nav__bar ul{
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    /* transition: 0.5s; */
+    opacity: 0  ;
+ }
+ .nav__bar.active ul{
+    opacity: 1;
+ }
+ .nav__bar ul li a{
+    margin-bottom: 15px;
+    color: #000000;
+ }
+
+
+ 
+
+ .nav__bar ul li a:hover{
+    color: #ffff;
+    background: linear-gradient(90deg, #59CBE9 0%, #F2ACB8 100%);
+    padding: 17px 31px 17px 51px;
+}
+
+/* .nav__bar ul li a.active{
+    color: #000;
+    background: linear-gradient(90deg, #59CBE9 0%, #F2ACB8 100%);
+    color: #ffff;
+} */
+.nav__bar ul li a.buy-now{
+    font-family: "Medium";
+    cursor: pointer;
+    color: #ffff;
+}
+
+
+}
+
+@media (max-width:320px) {
+    /* .nav__bar ul li a.active{
+         color: #000;
+        background: linear-gradient(90deg, #59CBE9 0%, #F2ACB8 100%);
+        color: #ffff; 
+    } */
+}
